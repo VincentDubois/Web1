@@ -72,22 +72,23 @@ public class Web1Activity extends Activity {
 					if (xpp.getName().equals("theme")) {
 						theme=currentTxt;
 					}
-					else if (xpp.getName() == "identifiant") {
+					else if (xpp.getName().equals("identifiant")) { // utiliser equals au lieu de == pour les chaines.
 						id=currentTxt;
 					}
-					else if (xpp.getName() == "titre") {
+					else if (xpp.getName().equals("titre")) {
 						titre=currentTxt;
 					}
-					else if (xpp.getName() == "reponse") {
+					else if (xpp.getName().equals("reponse")) {
 						reponse[u]=currentTxt;
 						u=u+1;
 					}
-					else if (xpp.getName() == "question") {
-						u=0;
+					else if (xpp.getName().equals( "question")) {
 						Question question = new Question(titre, reponse);
 						setQuestion.add(question);
+						u=0;
+						reponse = new String[4]; // ne pas oublier de créer un noveau tableau, sinon on modifie l'ancien !
 					}
-					else if (xpp.getName() == "questionnaire") {
+					else if (xpp.getName().equals("questionnaire")) {
 						questionnaire = new Questionnaire(theme, id, setQuestion);
 					}
 				}
