@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<groupe>
+	<questionnaire>
+		<theme>Animaux</theme>
+		<identifiant>2</identifiant>
+		<question>
+			<titre>Quel animal terrestre est le plus rapide?</titre>
+			<reponse>Le cheetah</reponse>
+			<reponse>Le guepard</reponse>
+			<reponse>La gazelle</reponse>
+			<reponse>Le lévrier</reponse>
+		</question>
+		<question>
+			<titre>Quel petit oiseau jaune a des iles nommees en son nom?</titre>
+			<reponse>Le canari</reponse>
+			<reponse>Le poussin Piou</reponse>
+			<reponse>Le poussin</reponse>
+			<reponse>Le dodo</reponse>
+		</question>
+		<question>
+			<titre>Quel carnivore a une criniere?</titre>
+			<reponse>Le lion</reponse>
+			<reponse>Le tigre</reponse>
+			<reponse>Le léopard</reponse>
+			<reponse>Le lapin des neiges</reponse>
+		</question>
+		<question>
+			<titre>Comment appelle-t-on un animal qui mange des herbes et de la viande?</titre>
+			<reponse>Un omnivore</reponse>
+			<reponse>Un herbovore</reponse>
+			<reponse>Un viandévores</reponse>
+			<reponse>Un vampire junkie</reponse>
+		</question>
+		<question>
+			<titre>Quel animal peut emmerger du ciment?</titre>
+			<reponse>Le rat</reponse>
+			<reponse>La belette</reponse>
+			<reponse>La gargouille</reponse>
+			<reponse>Le scarabé du sable</reponse>
+		</question>
+		<question>
+			<titre>Combien de temps les fourmis dorment-elles?</titre>
+			<reponse>Elles ne dorment jamais.</reponse>
+			<reponse>Elles ne dorement pas elles hiberne</reponse>
+			<reponse>3 mois</reponse>
+			<reponse>2 minutes par jour</reponse>
+		</question>
+		<question>
+			<titre>En rome ancienne, de quel oiseau rose la langue etait-elle consideree comme un succulent mets reserve a la royaute?</titre>
+			<reponse>Du flamant rose</reponse>
+			<reponse>Du langue Doc</reponse>
+			<reponse>Du porc</reponse>
+			<reponse>Du pigeon</reponse>
+		</question>
+		<question>
+			<titre>En Afrique, quel animal tue le plus grand nombre de personnes par annee?</titre>
+			<reponse>Le crocodile</reponse>
+			<reponse>Le buffle</reponse>
+			<reponse>Le lion</reponse>
+			<reponse>Le cobra</reponse>
+		</question>
+		<question>
+			<titre>Combien de poissons est-ce qu'une baleine peut avaler en un 'repas'?</titre>
+			<reponse>5 000 poissons</reponse>
+			<reponse>5 500 poissons</reponse>
+			<reponse>4 500 poissons</reponse>
+			<reponse>5 poissons</reponse>
+		</question>
+		<question>
+			<titre>Combien d'heures par jour le koala dort-il?</titre>
+			<reponse>14 heures</reponse>
+			<reponse>25 heures</reponse>
+			<reponse>10 heures</reponse>
+			<reponse>12 heures</reponse>
+		</question>
+		<question>
+			<titre>Quel animal grogne ?</titre>
+			<reponse>Le cochon</reponse>
+			<reponse>L'éléphant</reponse>
+			<reponse>Le chameau</reponse>
+			<reponse>Le chien</reponse>
+		</question>
+		<question>
+			<titre>Quel animal miaule et ronronne ?</titre>
+			<reponse>Le chat</reponse>
+			<reponse>Le lion</reponse>
+			<reponse>Le tigre</reponse>
+			<reponse>Le guépard</reponse>
+		</question>
+		<question>
+			<titre>Quel animal bèle ou chevrote ?</titre>
+			<reponse>La chèvre</reponse>
+			<reponse>Le bouc</reponse>
+			<reponse>La biche</reponse>
+			<reponse>Le gnou</reponse>
+		</question>
+		<question>
+			<titre>Quel cri fait l'hirondelle ?</titre>
+			<reponse>Elle gazouille</reponse>
+			<reponse>Elle ulule</reponse>
+			<reponse>Elle babille</reponse>
+			<reponse>Elle bubule</reponse>
+		</question>
+		<question>
+			<titre>Qui brait ?</titre>
+			<reponse>L'ane</reponse>
+			<reponse>La girafe</reponse>
+			<reponse>Le cerf</reponse>
+			<reponse>Le bouc</reponse>
+		</question>
+		<question>
+			<titre>Qu'utilisent les poissons pour respirer ?</titre>
+			<reponse>Les branchies</reponse>
+			<reponse>Les poumons</reponse>
+			<reponse>Les tubes</reponse>
+			<reponse>Les bouteilles d'oxygène</reponse>
+		</question>
+		<question>
+			<titre>Lequel de ces poissons n'est pas pêché en France ?</titre>
+			<reponse>Le saumon</reponse>
+			<reponse>Le cabillaud</reponse>
+			<reponse>Le merlan</reponse>
+			<reponse>La saule</reponse>
+		</question>
+		<question>
+			<titre>Quel poissons des fonds rocheux, proche de l'anguille, est craint pour ses morsures ?</titre>
+			<reponse>La murène</reponse>
+			<reponse>Le boa</reponse>
+			<reponse>L'étoile de mer</reponse>
+			<reponse>Le veau marin</reponse>
+		</question>
+	</questionnaire>
+</groupe>
