@@ -1,7 +1,10 @@
 package net.web1;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.Vector;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -16,6 +19,7 @@ import android.widget.TextView;
 
 public class Web1Activity extends Activity {
 	private Questionnaire questionnaire;
+	private Question question;
 
 
 	/** Called when the activity is first created. */
@@ -25,13 +29,15 @@ public class Web1Activity extends Activity {
 		setContentView(R.layout.main);
 
 		lecture_xml();
-
-		((TextView)findViewById(R.id.theme)).setText("Animaux");
-		((TextView)findViewById(R.id.question)).setText("Combien de bec à un canard auquel on a ajouté un bec en plastique pour déconner ?");
-		((Button)findViewById(R.id.button_R1)).setText("2");
-		((Button)findViewById(R.id.button_R2)).setText("1");
-		((Button)findViewById(R.id.button_R3)).setText("3");
-		((Button)findViewById(R.id.button_R4)).setText("9");
+		
+		((TextView)findViewById(R.id.theme)).setText(questionnaire.getTheme());
+		Question question = questionnaire.next();
+		((TextView)findViewById(R.id.question)).setText(question.getTitre());
+		((Button)findViewById(R.id.button_R1)).setText(question.getReponse(0));
+		((Button)findViewById(R.id.button_R2)).setText(question.getReponse(1));
+		((Button)findViewById(R.id.button_R3)).setText(question.getReponse(2));
+		((Button)findViewById(R.id.button_R4)).setText(question.getReponse(3));
+		
 	}
 
 	/* public boolean verification() {
@@ -84,8 +90,8 @@ public class Web1Activity extends Activity {
 					else if (xpp.getName() == "questionnaire") {
 						questionnaire = new Questionnaire(theme, id, setQuestion);
 					}
-					eventType = xpp.next();
 				}
+				eventType = xpp.next();
 
 			}
 		} catch (XmlPullParserException e) {
