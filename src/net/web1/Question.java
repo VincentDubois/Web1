@@ -3,14 +3,14 @@ package net.web1;
 public class Question {
 
 	public String titre;
-	public String[] question;
+	public String[] reponse;
 	
 	
 	
 	public Question(String titre, String[] question) {
 		super();
 		this.titre = titre;
-		this.question = question;
+		this.reponse = question;
 	}
 
 
