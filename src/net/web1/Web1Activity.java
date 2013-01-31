@@ -15,12 +15,18 @@ import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 
 public class Web1Activity extends Activity {
+	private Questionnaire questionnaire;
+
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
+		lecture_xml();
+	}
+
+	private void lecture_xml() {
 		String theme = null;
 		String id = null;
 		String titre = null;
@@ -59,8 +65,7 @@ public class Web1Activity extends Activity {
 						setQuestion.add(question);
 					}
 					else if (xpp.getName() == "questionnaire") {
-//						Collections.shuffle(setQuestion);
-						Questionnaire questionnaire = new Questionnaire(theme, id, setQuestion);
+						questionnaire = new Questionnaire(theme, id, setQuestion);
 					}
 					eventType = xpp.next();
 				}
