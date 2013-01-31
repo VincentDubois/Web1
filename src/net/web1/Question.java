@@ -12,12 +12,4 @@ public class Question {
 		this.titre = titre;
 		this.reponse = question;
 	}
-
-
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

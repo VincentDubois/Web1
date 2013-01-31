@@ -16,12 +16,5 @@ public class Questionnaire {
 		this.id = id;
 		this.questions = questions;
 	}
-
-
-
-	public static void main(String[] args) {
-	}
-
-	
 	
 }
