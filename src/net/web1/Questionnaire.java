@@ -1,16 +1,16 @@
 package net.web1;
 
-import java.util.HashSet;
+import java.util.Collection;
 
 public class Questionnaire {
 
 	public String theme;
 	public String id;
-	public HashSet questions;
+	public Collection questions;
 	
 	
 
-	public Questionnaire(String theme, String id, HashSet questions) {
+	public Questionnaire(String theme, String id, Collection questions) {
 		super();
 		this.theme = theme;
 		this.id = id;

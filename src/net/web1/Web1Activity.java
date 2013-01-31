@@ -1,6 +1,13 @@
 package net.web1;
 
+import java.io.IOException;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Vector;
+
 import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -14,35 +21,55 @@ public class Web1Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		String theme;
-		String id;
-		String titre;
-		String currentTxt;
-		
+		String theme = null;
+		String id = null;
+		String titre = null;
+		String currentTxt = null;
+		int u=0;
+		String[] reponse = new String[4];
+		List<Question> setQuestion = new Vector<Question>();
+
 
 		Resources res = getResources();
-		XmlResourceParser xpp = res.getXml(R.xml.myxml);
-		xpp.next();
-		int eventType = xpp.getEventType();
-		while (eventType != XmlPullParser.END_DOCUMENT) {
-			if (eventType == XmlPullParser.TEXT) {
-				currentTxt=xpp.getText();
-			}
-			if (eventType == XmlPullParser.END_TAG) {
-				if (xpp.getName().equals("theme")) {
-					theme=currentTxt;
+		XmlResourceParser xpp = res.getXml(R.xml.animaux);
+		try {
+			xpp.next();
+			int eventType = xpp.getEventType();
+			while (eventType != XmlPullParser.END_DOCUMENT) {
+				if (eventType == XmlPullParser.TEXT) {
+					currentTxt=xpp.getText();
 				}
-				else if (xpp.getName() == "identifiant") {
-					id=currentTxt;
+				if (eventType == XmlPullParser.END_TAG) {
+					if (xpp.getName().equals("theme")) {
+						theme=currentTxt;
+					}
+					else if (xpp.getName() == "identifiant") {
+						id=currentTxt;
+					}
+					else if (xpp.getName() == "titre") {
+						titre=currentTxt;
+					}
+					else if (xpp.getName() == "reponse") {
+						reponse[u]=currentTxt;
+						u=u+1;
+					}
+					else if (xpp.getName() == "question") {
+						u=0;
+						Question question = new Question(titre, reponse);
+						setQuestion.add(question);
+					}
+					else if (xpp.getName() == "questionnaire") {
+//						Collections.shuffle(setQuestion);
+						Questionnaire questionnaire = new Questionnaire(theme, id, setQuestion);
+					}
+					eventType = xpp.next();
 				}
-			
-				
-				
-				// stringBuffer.append("\nEND_TAG: " + xpp.getName());
-				// stringBuffer.append("\nTEXT: " + xpp.getText());
-				eventType = xpp.next();
-			}
 
+			}
+		} catch (XmlPullParserException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 }
