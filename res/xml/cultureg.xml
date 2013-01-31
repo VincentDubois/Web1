@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<groupe>
+<questionnaire>
+	<theme>Culture générale</theme>
+	<identifiant>1</identifiant>
+	<question>
+	<titre>Combien de département compte la France?</titre>
+		<reponse>101</reponse>
+		<reponse>95</reponse>
+		<reponse>115</reponse>
+		<reponse>127</reponse>
+	</question>
+	
+	<question>
+	<titre>Le traité de Versailles mit fin à</titre>
+		<reponse>à la Première Guerre mondiale</reponse>
+		<reponse>à la guerre de Cent Ans</reponse>
+		<reponse>à la guerre du Vietnam</reponse>
+		<reponse>à la Second Guerre mondiale</reponse>
+	</question>
+	
+	<question>
+	<titre>Les chutes du Niagara sont à la frontière entre:</titre>
+		<reponse>le Canada et les Etats-Unis</reponse>
+		<reponse>les Etats-Unis et le Mexique</reponse>
+		<reponse>le Sénégal et la Gambie</reponse>
+		<reponse>le Mexique et le Guatemala</reponse>
+	</question>
+	
+	<question>
+	<titre>Qui fut le quarantième président des USA ?</titre>
+		<reponse>Ronald Reagan</reponse>
+		<reponse>Richard Nixon</reponse>
+		<reponse>John F. Kennedy</reponse>
+		<reponse>George W. Bush</reponse>
+	</question>
+	
+	<question>
+	<titre>Qui est le dieu du Soleil dans l'ancienne Egypte ?</titre>
+		<reponse>Râ</reponse>
+		<reponse>Rî</reponse>
+		<reponse>Rû</reponse>
+		<reponse>Rô</reponse>
+	</question>
+	
+	<question>
+	<titre>Quel est le nom du docteur dans Cluedo ?</titre>
+		<reponse>Docteur Olive</reponse>
+		<reponse>Docteur Jekyll</reponse>
+		<reponse>Docteur Violet</reponse>
+		<reponse>Docteur Pistache</reponse>
+	</question>
+	
+	<question>
+	<titre>En combien de temps la Terre tourne-t-elle autour du Soleil ?</titre>
+		<reponse>365 jours</reponse>
+		<reponse>24 heures</reponse>
+		<reponse>3 mois</reponse>
+		<reponse>6 mois</reponse>
+	</question>
+	
+	<question>
+	<titre>Qui a mis le premier le pied sur la Lune ?</titre>
+		<reponse>Neil Armstrong</reponse>
+		<reponse>Youri Gagarine</reponse>
+		<reponse>Arthur Poiré</reponse>
+		<reponse>Buzz Aldrin</reponse>
+	</question>
+	
+	<question>
+	<titre>Quel est le pays natal de Wolfgang Amadeus Mozart ?</titre>
+		<reponse>L'Autriche</reponse>
+		<reponse>La Roumanie</reponse>
+		<reponse>L'Allemagne</reponse>
+		<reponse>La Suisse</reponse>
+	</question>
+	
+	<question>
+	<titre>Combien y a-t-il de joueurs dans une équipe de football ?</titre>
+		<reponse>11</reponse>
+		<reponse>13</reponse>
+		<reponse>9</reponse>
+		<reponse>15</reponse>
+	</question>
+	
+	<question>
+	<titre>Quel est le diamètre d'un CD  ?</titre>
+		<reponse>12</reponse>
+		<reponse>13</reponse>
+		<reponse>11</reponse>
+		<reponse>10</reponse>
+	</question>
+	
+	<question>
+	<titre>Quel est le nom du chien de Tintin ?</titre>
+		<reponse>Milou</reponse>
+		<reponse>Rex</reponse>
+		<reponse>Pluto</reponse>
+		<reponse>Max</reponse>
+	</question>
+	
+	<question>
+	<titre>Que collectionne un conchyophile ?</titre>
+		<reponse>Des coquillages</reponse>
+		<reponse>Des boîtes d'allumettes</reponse>
+		<reponse>Des capsules</reponse>
+		<reponse>Des journaux</reponse>
+	</question>
+	
+	<question>
+	<titre>Quel est le plus grand fleuve au monde ?</titre>
+		<reponse>Nil</reponse>
+		<reponse>Amazone</reponse>
+		<reponse>Mississippi</reponse>
+		<reponse>Danube</reponse>
+	</question>
+	
+	<question>
+	<titre>Quelle est la monnaie du Brésil ?</titre>
+		<reponse>Le réal</reponse>
+		<reponse>Le peso</reponse>
+		<reponse>Le balboa</reponse>
+		<reponse>Le kyat</reponse>
+	</question>
+	
+	<question>
+	<titre>Combien de dents a un adulte ?</titre>
+		<reponse>32</reponse>
+		<reponse>25</reponse>
+		<reponse>37</reponse>
+		<reponse>30</reponse>
+	</question>
+</questionnaire>
+</groupe>
