@@ -25,6 +25,8 @@ public class MenuActivity extends Activity {
 		setContentView(R.layout.menu);
 
 		liste = new ArrayList<Contact>();
+		
+		liste.add(new Contact(null, "Toto"));
 
 
 		Button jeuLocal = (Button)findViewById(R.id.jeu_local);
