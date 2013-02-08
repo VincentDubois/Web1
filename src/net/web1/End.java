@@ -3,7 +3,7 @@ package net.web1;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class end extends Activity{
+public class End extends Activity{
 
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
