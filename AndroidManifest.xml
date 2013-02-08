@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Web1Activity"></activity>
+        <activity android:name=".EndActivity"></activity>
     </application>
 
 </manifest>
