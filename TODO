@@ -3,8 +3,19 @@
   + Obtention de listes de questions
 - Activit� QCM
   + Conception de l'interface utilisateur
-    Romain Fauvet / Adrien Delahaye
+    Romain Fauvet / Adrien Delahaye 
   + Cr�ation de la classe QCM
   + Code de l'activit�
-  
-  
+      Mickael et Nathan
+  =============================
+          HISTORIQUE
+  =============================
+
+- Liste de questions
+  + définition du format XML
+  + obtention de listes de questions
+- Activité QCM
+  + Conception de l'interface utilisateur
+  + Création de la classe QCM
+
+
