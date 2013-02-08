@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<groupe>
+<questionnaire>
+	<theme>Cinéma</theme>
+	<identifiant>3</identifiant>
+	
+		<question>
+			<titre>Qui a joué dans 'Brice de Nice'</titre>
+			<reponse>Jean Dujardin</reponse>
+			<reponse>Gérard Depardieu</reponse>
+			<reponse>Jean Réno</reponse>
+			<reponse>Jacky Chan</reponse>
+		</question>	
+		
+		<question>
+			<titre>George Lucas vend son empire Lucasfilms à Disney. Pour une broutille d'environ...</titre>
+			<reponse>4 milliards de dollars</reponse>
+			<reponse>7 millions de dollars</reponse>
+			<reponse>2 milliards de dollars</reponse>
+			<reponse>5 milliard de dollars</reponse>
+		</question>	
+		
+		<question>
+			<titre>Une scène de Marion Cotillard dans "The Dark Knight Rises" a beaucoup fait parler. De quelle scène s'agit-il ?</titre>
+			<reponse>Une scène où Marion Cotillard meurt</reponse>
+			<reponse>Une scène où Marion Cotillard embrasse Batman</reponse>
+			<reponse>Une scène où Marion Cotillard se bat avec Catwoman</reponse>
+			<reponse>Une scène où Marion Cotillard dit une phrase en français</reponse>
+		</question>		
+
+		<question>
+			<titre>JoeyStarr s'est essayé au doublage en 2012. Pour quel personnage ?</titre>
+			<reponse>L'ours de "Ted"</reponse>
+			<reponse>Un pirate dans "Les Pirates ! Bons à rien, Mauvais en tout"</reponse>
+			<reponse>Un personnage de jeu vidéo dans "Les Mondes de Ralph"</reponse>
+			<reponse>Le Lorax</reponse>
+		</question>	
+				
+		<question>
+			<titre>Quel est le nom de la série emblématique des Monty Python ?</titre>
+			<reponse>The Monty Python's Flying Circus</reponse>
+			<reponse>The Hilarious Show</reponse>
+			<reponse>The Monty Python's Show</reponse>
+			<reponse>The Big Bad Flying Circus</reponse>
+		</question>	
+		
+		<question>
+			<titre>Dans la comédie "Les Seigneurs", de quel club Gad Elmaleh, Franck Dubosc, Omar Sy et les autres défendent-ils les couleurs ?</titre>
+			<reponse>Molène</reponse>
+			<reponse>Lannion</reponse>
+			<reponse>Pontivy</reponse>
+			<reponse>Ploufragan</reponse>
+		</question>	
+		
+		<question>
+			<titre>Quel film a rapporté le plus de dollars au box-office américain en 2012, avec 623 millions de dollars de recettes ?</titre>
+			<reponse>Avengers</reponse>
+			<reponse>Skyfall</reponse>
+			<reponse>The Dark Knight Rises</reponse>
+			<reponse>Twilight - Chapitre 5 : Révélation 2e partie</reponse>
+		</question>	
+		
+		<question>
+			<titre>Dans une comédie régressive et jubilatoire sortie en février, Tucker et Dale fightent...</titre>
+			<reponse>Le mal</reponse>
+			<reponse>Les cons</reponse>
+			<reponse>Tout ce qui bouge</reponse>
+			<reponse>Leur voisine</reponse>
+		</question>	
+
+		<question>
+			<titre>Sur cette photo tirée de la comédie "Projet X", les ballons s'apprêtent à faire s'envoler...</titre>
+			<reponse>Un chien</reponse>
+			<reponse>Une moto</reponse>
+			<reponse>Un ordinateur</reponse>
+			<reponse>Les vêtements d'une fille</reponse>
+		</question>	
+		
+		<question>
+			<titre>Lequel de ces magiciçens n'appartient pas à l'univers de Tolkien</titre>
+			<reponse>Merlin le bleu</reponse>
+			<reponse>Saroumane le blanc</reponse>
+			<reponse>Gandalf le gris</reponse>
+			<reponse>Radagast le brun</reponse>
+		</question>	
+		
+		<question>
+			<titre>Dans la "cité de la peur", que se passe t'il lorsque le personnage incarné par Dominique Farrugia est heureux</titre>
+			<reponse>Il vomit</reponse>
+			<reponse>Il pleure</reponse>
+			<reponse>Il s'évanouit</reponse>
+			<reponse>Il fait des claquettes</reponse>
+		</question>	
+		
+		<question>
+			<titre>Où se passe la fin du film "Zombieland" ?</titre>
+			<reponse>Dans un parc d'attractions</reponse>
+			<reponse>Dans un tunnel</reponse>
+			<reponse>Dans la maison de Bill Muray</reponse>
+			<reponse>Dans une école maternelle</reponse>
+		</question>		
+
+		<question>
+			<titre>Dans quel film retrouve t-on la réplique "Parle à ma main" ?</titre>
+			<reponse>Terminator</reponse>
+			<reponse>L'exorciste</reponse>
+			<reponse>Brice de Nice</reponse>
+			<reponse>Coco</reponse>
+		</question>		
+
+		<question>
+			<titre>Qui a réalisé le dernier Tintin ?</titre>
+			<reponse>Steven Spielberg</reponse>
+			<reponse>Christopher Nolan</reponse>
+			<reponse>Peter Jackson</reponse>
+			<reponse>Quentin Tarantino</reponse>
+		</question>		
+
+		<question>
+			<titre>Qui a interprété le rôle de Chewbacca dans la série Star Wars ?</titre>
+			<reponse>Peter Mayhew</reponse>
+			<reponse>Brad pitt</reponse>
+			<reponse>Kenneth George Baker </reponse>
+			<reponse>Robert de Niro</reponse>
+		</question>		
+
+		<question>
+			<titre>Dans le film Thor, comment se prénomme le méchant ?</titre>
+			<reponse>Loki</reponse>
+			<reponse>Thor</reponse>
+			<reponse>Odin</reponse>
+			<reponse>Heimdall</reponse>
+		</question>		
+
+		<question>
+			<titre>Dans "la tour montparnasse infernale" qui doit être sauvé par le duo Eric et Ramzy ?</titre>
+			<reponse>Marie-Joelle</reponse>
+			<reponse>Marie-Pierre</reponse>
+			<reponse>Marie-Claude</reponse>
+			<reponse>Marie-ToutCourt</reponse>
+		</question>		
+
+		<question>
+			<titre>Dans quelle ville se passe l'action du film "piège de cristal" ?</titre>
+			<reponse>Los Angeles</reponse>
+			<reponse>New York</reponse>
+			<reponse>Washington</reponse>
+			<reponse>Dunkerque</reponse>
+		</question>		
+
+		<question>
+			<titre>Compléter le titre de cette série "Les oiseaux se cachent pour...</titre>
+			<reponse>mourir</reponse>
+			<reponse>vivre</reponse>
+			<reponse>survivre</reponse>
+			<reponse>faire leurs besoins</reponse>
+		</question>		
+
+		<question>
+			<titre>Qui est "la cheerleader" dans la série "Heroes" ?</titre>
+			<reponse>Hayden Pannetière</reponse>
+			<reponse>Scarlett Johansson</reponse>
+			<reponse>Lindsay Lohan</reponse>
+			<reponse>jessica Alba</reponse>
+		</question>	
+
+		<question>
+			<titre>Quelles sont les chaussures porté par Will Smih dans I-Robot ?</titre>
+			<reponse>Des converses</reponse>
+			<reponse>Des santiags</reponse>
+			<reponse>Des nikes</reponse>
+			<reponse>Des adidas</reponse>
+		</question>		
+
+		<question>
+			<titre>Qui incarne les infiltrés dans le film du même nom ?</titre>
+			<reponse>Matt Damon et Léonardo Dicaprio</reponse>
+			<reponse>Laurel et Hardy</reponse>
+			<reponse>Tom Cruise et Brad Pitt</reponse>
+			<reponse>Angélina Jolie et Cameron Diaz</reponse>
+		</question>		
+
+		<question>
+			<titre>Dans l'effet papillon, quel est le pouvoir du héros ?</titre>
+			<reponse>Pouvoir changer le cours de l'histoire</reponse>
+			<reponse>Voler</reponse>
+			<reponse>Se téléporter</reponse>
+			<reponse>Réciter l'aplphabet en rotant</reponse>
+		</question>		
+
+		<question>
+			<titre>Comment s'appelle la jeune fille dans le film d'animation "Monstres et Cie" ?</titre>
+			<reponse>Boo</reponse>
+			<reponse>Baa</reponse>
+			<reponse>Bii</reponse>
+			<reponse>B2oba</reponse>
+		</question>		
+		
+</questionnaire>
+</groupe>
