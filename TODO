@@ -1,10 +1,13 @@
 - Liste de questions
   + D�finition du format XML
   + Obtention de listes de questions
+
+            Simon & Hadrien 
 - Activit� QCM
   + Conception de l'interface utilisateur
     Romain Fauvet / Adrien Delahaye 
   + Cr�ation de la classe QCM
+        Mathieu & Jérémy
   + Code de l'activit�
       Mickael et Nathan
   =============================
