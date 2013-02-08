@@ -106,23 +106,3 @@ public class Web1Activity extends Activity {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
