@@ -29,6 +29,16 @@ public class MenuActivity extends Activity {
 
 	private ArrayAdapter<Contact> arrayAdapter;
 	
+	public boolean contact_present(String id){
+		for (Contact contact : liste){
+			
+			if(id.equals(contact.id)){
+			return false;	
+			}
+		}
+		return true;
+	}
+	
 	public Bitmap getPhoto(String id){
 		Uri contactUri = ContentUris.withAppendedId(Contacts.CONTENT_URI, Long.parseLong(id));
 		return BitmapFactory.decodeStream(Contacts.openContactPhotoInputStream(getContentResolver(), contactUri));
@@ -46,10 +56,12 @@ public class MenuActivity extends Activity {
 					String nom = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
 					Bitmap image = getPhoto(id);
 					// code utilisant le nom ou l'id...
-					liste.add(new Contact(image, nom));
-					arrayAdapter.notifyDataSetChanged();
+					contact_present(id);
+					if(contact_present(id)){
+						liste.add(new Contact(id, image, nom));
+						arrayAdapter.notifyDataSetChanged();
+					}
 				}
-				
 			}
 		}
 	}
