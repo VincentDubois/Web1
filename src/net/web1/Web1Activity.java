@@ -23,49 +23,46 @@ public class Web1Activity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		lecture_xml();
+		lecture_xml(R.xml.animaux);
+		lecture_xml(R.xml.cinema);
 	}
 
-	private void lecture_xml() {
+	private void lecture_xml(int fichier) {
 		String theme = null;
 		String id = null;
 		String titre = null;
 		String currentTxt = null;
-		int u=0;
+		int u = 0;
 		String[] reponse = new String[4];
 		List<Question> setQuestion = new Vector<Question>();
 
-
 		Resources res = getResources();
-		XmlResourceParser xpp = res.getXml(R.xml.animaux);
+		
+		XmlResourceParser xpp = res.getXml(fichier);
 		try {
 			xpp.next();
 			int eventType = xpp.getEventType();
 			while (eventType != XmlPullParser.END_DOCUMENT) {
 				if (eventType == XmlPullParser.TEXT) {
-					currentTxt=xpp.getText();
+					currentTxt = xpp.getText();
 				}
 				if (eventType == XmlPullParser.END_TAG) {
 					if (xpp.getName().equals("theme")) {
-						theme=currentTxt;
-					}
-					else if (xpp.getName() == "identifiant") {
-						id=currentTxt;
-					}
-					else if (xpp.getName() == "titre") {
-						titre=currentTxt;
-					}
-					else if (xpp.getName() == "reponse") {
-						reponse[u]=currentTxt;
-						u=u+1;
-					}
-					else if (xpp.getName() == "question") {
-						u=0;
+						theme = currentTxt;
+					} else if (xpp.getName() == "identifiant") {
+						id = currentTxt;
+					} else if (xpp.getName() == "titre") {
+						titre = currentTxt;
+					} else if (xpp.getName() == "reponse") {
+						reponse[u] = currentTxt;
+						u = u + 1;
+					} else if (xpp.getName() == "question") {
+						u = 0;
 						Question question = new Question(titre, reponse);
 						setQuestion.add(question);
-					}
-					else if (xpp.getName() == "questionnaire") {
-						questionnaire = new Questionnaire(theme, id, setQuestion);
+					} else if (xpp.getName() == "questionnaire") {
+						questionnaire = new Questionnaire(theme, id,
+								setQuestion);
 					}
 					eventType = xpp.next();
 				}
