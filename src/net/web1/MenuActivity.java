@@ -41,10 +41,6 @@ public class MenuActivity extends Activity {
 			}
 		});
 
-
-
-
-
 		Button rechercher_joueur = (Button) findViewById(R.id.rechercher_joueur);
 		rechercher_joueur.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {

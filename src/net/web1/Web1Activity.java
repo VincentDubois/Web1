@@ -1,16 +1,18 @@
 package net.web1;
 
 import java.io.IOException;
-import java.util.Collection;
-import java.util.HashSet;
+import java.util.Calendar;
 import java.util.List;
-import java.util.Set;
 import java.util.Vector;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
@@ -20,7 +22,7 @@ import android.widget.TextView;
 public class Web1Activity extends Activity {
 	private Questionnaire questionnaire;
 	private Question question;
-
+	private AlarmReceiver rec;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -29,6 +31,26 @@ public class Web1Activity extends Activity {
 		setContentView(R.layout.main);
 
 		lecture_xml();
+		
+		
+		 // get a Calendar object with current time
+		 Calendar cal = Calendar.getInstance();
+		 // add 5 minutes to the calendar object
+		 
+	//	 cal.add(Calendar.MINUTE, 1);
+		 cal.add(Calendar.SECOND, 15);
+		 rec = new AlarmReceiver();
+		 
+		 Intent intent = new Intent(this, AlarmReceiver.class);
+		 intent.putExtra("alarm_message", "perdu!");
+		 // In reality, you would want to have a static variable for the request code instead of 192837
+		 PendingIntent sender = PendingIntent.getBroadcast(this, 192837, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+		 
+		 // Get the AlarmManager service
+		 AlarmManager am = (AlarmManager) getSystemService(ALARM_SERVICE);
+		 am.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), sender);		
+		
+	//	getSystemService(Context.ALARM_SERVICE);
 		
 		((TextView)findViewById(R.id.theme)).setText(questionnaire.getTheme());
 		Question question = questionnaire.next();
