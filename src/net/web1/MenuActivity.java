@@ -3,11 +3,15 @@ package net.web1;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.ContentUris;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.provider.ContactsContract.Contacts;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -25,6 +29,11 @@ public class MenuActivity extends Activity {
 
 	private ArrayAdapter<Contact> arrayAdapter;
 	
+	public Bitmap getPhoto(String id){
+		Uri contactUri = ContentUris.withAppendedId(Contacts.CONTENT_URI, Long.parseLong(id));
+		return BitmapFactory.decodeStream(Contacts.openContactPhotoInputStream(getContentResolver(), contactUri));
+	}
+	
 	@Override
 	public void onActivityResult(int reqCode, int resultCode, Intent data) {
 		super.onActivityResult(reqCode, resultCode, data);
@@ -35,8 +44,9 @@ public class MenuActivity extends Activity {
 				if (c.moveToFirst()) {
 					String id =c.getString(c.getColumnIndexOrThrow(ContactsContract.Contacts._ID));
 					String nom = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+					Bitmap image = getPhoto(id);
 					// code utilisant le nom ou l'id...
-					liste.add(new Contact(null, nom));
+					liste.add(new Contact(image, nom));
 					arrayAdapter.notifyDataSetChanged();
 				}
 				
