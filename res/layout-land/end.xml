@@ -8,13 +8,13 @@
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.15"
+        android:layout_weight="1"
         android:src="@drawable/ic_launcher" />
     
     <TextView
         android:id="@+id/Statistiques"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Statistiques"
         android:textSize="@dimen/test" />
@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" >
+        
         <TextView
             android:id="@+id/TextView01"
             android:layout_width="0dp"
@@ -40,15 +41,16 @@
             android:gravity="center"
             android:text="10 questions"
             android:textSize="@dimen/texte" />
-
+    
     </LinearLayout>
-
-    <LinearLayout
+
+<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" >
-
-        <TextView
+         
+         
+         <TextView
             android:id="@+id/TextView04"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -56,8 +58,8 @@
             android:gravity="center"
             android:text="Temps total :"
             android:textSize="@dimen/texte" />
-
-        <TextView
+         
+         <TextView
             android:id="@+id/TextView03"
             android:layout_width="0dp"
             android:layout_height="match_parent"
