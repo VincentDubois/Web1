@@ -16,7 +16,7 @@ public class Question {
 		super();
 		this.titre = titre;
 		this.reponse = question;
-		
+		melange();
 	}
 
 	
