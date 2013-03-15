@@ -1,6 +1,7 @@
 package net.web1;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Vector;
@@ -16,6 +17,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -23,13 +25,21 @@ public class Web1Activity extends Activity {
 	private Questionnaire questionnaire;
 	private Question question;
 	private AlarmReceiver rec;
+	private ArrayList<Parcelable> listeContact;
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-
+		
+		Intent intent2 = this.getIntent();
+		
+		listeContact = intent2.getParcelableArrayListExtra("listeContact");
+		ArrayList<Contact> liste = new ArrayList<Contact>();
+		for(Parcelable bundle : listeContact ){
+			liste.add(bundle.bundle());
+		}
 		lecture_xml();
 		
 		
@@ -108,7 +118,7 @@ public class Web1Activity extends Activity {
 						Question question = new Question(titre, reponse);
 						setQuestion.add(question);
 						u=0;
-						reponse = new String[4]; // ne pas oublier de créer un noveau tableau, sinon on modifie l'ancien !
+						reponse = new String[4]; // ne pas oublier de crï¿½er un noveau tableau, sinon on modifie l'ancien !
 					}
 					else if (xpp.getName().equals("questionnaire")) {
 						questionnaire = new Questionnaire(theme, id, setQuestion);
