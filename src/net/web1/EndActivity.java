@@ -9,6 +9,4 @@ public class EndActivity extends Activity{
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.end);
 	    }
-	
-
 }
