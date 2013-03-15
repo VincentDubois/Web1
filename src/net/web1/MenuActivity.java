@@ -29,7 +29,7 @@ public class MenuActivity extends Activity {
 
 	private ArrayAdapter<Contact> arrayAdapter;
 	
-	public boolean contact_present(String id){
+	public boolean contact_absent(String id){
 		for (Contact contact : liste){
 			
 			if(id.equals(contact.id)){
@@ -55,7 +55,7 @@ public class MenuActivity extends Activity {
 					String id =c.getString(c.getColumnIndexOrThrow(ContactsContract.Contacts._ID));
 					String nom = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
 					Bitmap image = getPhoto(id);
-					if(contact_present(id)){
+					if(contact_absent(id)){
 						liste.add(new Contact(id, image, nom));
 						arrayAdapter.notifyDataSetChanged();
 					}
