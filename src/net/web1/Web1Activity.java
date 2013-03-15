@@ -16,8 +16,10 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Web1Activity extends Activity {
 	private Questionnaire questionnaire;
@@ -53,15 +55,56 @@ public class Web1Activity extends Activity {
 	//	getSystemService(Context.ALARM_SERVICE);
 		
 		((TextView)findViewById(R.id.theme)).setText(questionnaire.getTheme());
-		Question question = questionnaire.next();
+		next();
+
+		
+	}   
+	
+
+	
+	public void next(){
+		question = questionnaire.next();
 		((TextView)findViewById(R.id.question)).setText(question.getTitre());
 		((Button)findViewById(R.id.button_R1)).setText(question.getReponse(0));
-		((Button)findViewById(R.id.button_R2)).setText(question.getReponse(1));
-		((Button)findViewById(R.id.button_R3)).setText(question.getReponse(2));
-		((Button)findViewById(R.id.button_R4)).setText(question.getReponse(3));
+		((Button)findViewById(R.id.button_R1)).setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v){
+				if (question.bonneReponse(0))
+				Toast.makeText(Web1Activity.this, "Bonne réponse", Toast.LENGTH_SHORT).show();
+				else Toast.makeText(Web1Activity.this, "Mauvaise réponse", Toast.LENGTH_SHORT).show();
+				next();
+			}
+			});
 		
+		((Button)findViewById(R.id.button_R2)).setText(question.getReponse(1));
+		((Button)findViewById(R.id.button_R2)).setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v){
+				if (question.bonneReponse(1))
+				Toast.makeText(Web1Activity.this, "Bonne réponse", Toast.LENGTH_SHORT).show();
+				else Toast.makeText(Web1Activity.this, "Mauvaise réponse", Toast.LENGTH_SHORT).show();
+				next();
+			}
+			});
+		
+		((Button)findViewById(R.id.button_R3)).setText(question.getReponse(2));
+		((Button)findViewById(R.id.button_R3)).setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v){
+				if (question.bonneReponse(2))
+				Toast.makeText(Web1Activity.this, "Bonne réponse", Toast.LENGTH_SHORT).show();
+				else Toast.makeText(Web1Activity.this, "Mauvaise réponse", Toast.LENGTH_SHORT).show();
+				next();
+			}
+			});
+		
+		((Button)findViewById(R.id.button_R4)).setText(question.getReponse(3));
+		((Button)findViewById(R.id.button_R4)).setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v){
+				if (question.bonneReponse(3))
+				Toast.makeText(Web1Activity.this, "Bonne réponse", Toast.LENGTH_SHORT).show();
+				else Toast.makeText(Web1Activity.this, "Mauvaise réponse", Toast.LENGTH_SHORT).show();
+				next();
+			}
+			});
 	}
-
 	/* public boolean verification() {
     	if (currentTxt==t[0]){
     		return true;
@@ -108,7 +151,7 @@ public class Web1Activity extends Activity {
 						Question question = new Question(titre, reponse);
 						setQuestion.add(question);
 						u=0;
-						reponse = new String[4]; // ne pas oublier de cr�er un noveau tableau, sinon on modifie l'ancien !
+						reponse = new String[4]; // ne pas oublier de cr�er un noveau tableau, sinon on modifie l'ancien !
 					}
 					else if (xpp.getName().equals("questionnaire")) {
 						questionnaire = new Questionnaire(theme, id, setQuestion);

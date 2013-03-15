@@ -3,6 +3,8 @@ package net.web1;
 import java.util.Collections;
 import java.util.Vector;
 
+import android.widget.Button;
+
 
 public class Question {
 
@@ -30,7 +32,10 @@ public class Question {
 		
 		Collections.shuffle(correspondance);
 	}
-
+    
+	public void eventreponse(){
+	
+	}
 
 	public String getTitre() {
 		return titre;
@@ -53,6 +58,13 @@ public class Question {
 	public void setReponse(String[] reponse) {
 		this.reponse = reponse;
 	}
+
+
+	public boolean bonneReponse(int i) {
+		return (correspondance.get(i) == 0);
+	}
 	
-	
+    public void next(){
+    	
+    }
 }
