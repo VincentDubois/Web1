@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:orientation="vertical" >
-
   
        <TextView
         android:id="@+id/nom_jeu"
@@ -25,12 +25,14 @@
            android:layout_weight="1" >
            
        <Button
-               android:id="@+id/rechercher_joueur"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               android:text="Rechercher des joueurs" />
-           
+           android:id="@+id/rechercher_joueur"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_margin="@dimen/margin"
+           android:layout_weight="1"
+           android:background="@drawable/bouton1"
+           android:text="Rechercher des joueurs"/>
+       
            <ListView
                android:id="@+id/liste_joueurs"
                android:layout_width="0dp"
@@ -67,20 +69,23 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content" >
 
-
            <Button
                android:id="@+id/jeu_en_ligne"
                android:layout_width="0dp"
                android:layout_height="wrap_content"
-               android:text="Jouer en ligne"
-               android:layout_weight="1" />
+               android:layout_margin="@dimen/margin"
+               android:layout_weight="1"
+               android:background="@drawable/bouton1"
+               android:text="Jouer en ligne" />
 
            <Button
                android:id="@+id/jeu_local"
                android:layout_width="0dp"
                android:layout_height="wrap_content"
-               android:text="Jouer en local"
-               android:layout_weight="1" />
+               android:layout_margin="@dimen/margin"
+               android:layout_weight="1"
+               android:background="@drawable/bouton1"
+               android:text="Jouer en local" />
 
        </LinearLayout>
 
