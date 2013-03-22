@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="margin">4dp</dimen>
     <dimen name="test">30sp</dimen>
     <dimen name="texte">15sp</dimen>
     <dimen name="question">25sp</dimen>
