@@ -64,7 +64,4 @@ public class Question {
 		return (correspondance.get(i) == 0);
 	}
 	
-    public void next(){
-    	
-    }
 }
