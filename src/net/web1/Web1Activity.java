@@ -1,6 +1,7 @@
 package net.web1;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Vector;
@@ -11,11 +12,12 @@ import org.xmlpull.v1.XmlPullParserException;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,15 +27,22 @@ public class Web1Activity extends Activity {
 	private Questionnaire questionnaire;
 	private Question question;
 	private AlarmReceiver rec;
+	private ArrayList<Parcelable> listeContact;
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-
-		lecture_xml();
 		
+		Intent intent2 = this.getIntent();
+		
+		listeContact = intent2.getParcelableArrayListExtra("listeContact");
+		ArrayList<Contact> liste = new ArrayList<Contact>();
+		for(Parcelable bundle : listeContact ){
+			liste.add(new Contact((Bundle) bundle));
+		}
+		lecture_xml();
 		
 		 // get a Calendar object with current time
 		 Calendar cal = Calendar.getInstance();
