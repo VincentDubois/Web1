@@ -1,9 +1,10 @@
 package net.web1;
 
 import java.util.Collection;
+import java.util.Iterator;
 
 public class Questionnaire {
-
+    public Iterator<Question> qnext;
 	public String theme;
 	public String id;
 	public Collection<Question> questions;
@@ -16,11 +17,13 @@ public class Questionnaire {
 		
 	}*/
 	
+	
 	public Questionnaire(String theme, String id, Collection questions) {
 		super();
 		this.theme = theme;
 		this.id = id;
 		this.questions = questions;
+		this.qnext = questions.iterator();
 	}
 
 	public String getId() {
@@ -44,7 +47,12 @@ public class Questionnaire {
 	}
 
 	public Question next() {
-		return questions.iterator().next();
+		if(qnext.hasNext()){
+		    return qnext.next();
+		}else{
+			this.qnext = questions.iterator();
+		}
+		return qnext.next();
 	}
 	
 	
