@@ -17,6 +17,7 @@ import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -40,7 +41,6 @@ public class Web1Activity extends Activity {
 			liste.add(new Contact((Bundle) bundle));
 		}
 		lecture_xml();
-		
 		
 		 // get a Calendar object with current time
 		 Calendar cal = Calendar.getInstance();
