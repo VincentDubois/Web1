@@ -77,6 +77,13 @@ public class MenuActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent t = new Intent(MenuActivity.this, Web1Activity.class);
+				ArrayList<Bundle> listeContact = new ArrayList<Bundle>();
+				for(Contact contact : liste){
+					listeContact.add(contact.bundle());
+				}
+				t.putParcelableArrayListExtra("listeContact", listeContact);
+
+				
 				startActivity(t);
 			}
 		});
@@ -85,6 +92,7 @@ public class MenuActivity extends Activity {
 		rechercher_joueur.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+				
 				startActivityForResult(intent, PICK_CONTACT);
 			}
 		});
