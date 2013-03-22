@@ -4,89 +4,85 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical" >
-  
-       <TextView
+
+    <TextView
         android:id="@+id/nom_jeu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nom du jeu"
-        android:gravity="center"        
+        android:gravity="center"
+        android:text="Time Bomb"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-       
-       <ImageView
-           android:id="@+id/image_menu"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:src="@drawable/ic_launcher" />
-       
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="0dp" 
-           android:layout_weight="1" >
-           
-       <Button
-           android:id="@+id/rechercher_joueur"
-           android:layout_width="0dp"
-           android:layout_height="match_parent"
-           android:layout_margin="@dimen/margin"
-           android:layout_weight="1"
-           android:background="@drawable/bouton1"
-           android:text="Rechercher des joueurs" />
-       
-       <ListView
-               android:id="@+id/liste_joueurs"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:layout_weight="1" >
 
-           </ListView>
-           
+    <ImageView
+        android:id="@+id/image_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/logo" />
 
-       </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
 
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="0dp" 
-                       android:layout_weight="1">
-           
-	       <ExpandableListView
-	           android:id="@+id/liste_themes"
-	           android:layout_width="0dp"
-	           android:layout_height="wrap_content"
-	           android:layout_weight="1" >
-	       </ExpandableListView>
-	       
-	       <ExpandableListView
-	           android:id="@+id/liste_questionnaires"
-	           android:layout_width="0dp"
-	           android:layout_height="wrap_content"
-	           android:layout_weight="1" >
-	       </ExpandableListView>	       
-	           
-       </LinearLayout>
+        <Button
+            android:id="@+id/rechercher_joueur"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/bouton1"
+            android:text="Rechercher des joueurs" />
 
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content" >
+        <ListView
+            android:id="@+id/liste_joueurs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </ListView>
+    </LinearLayout>
 
-           <Button
-               android:id="@+id/jeu_en_ligne"
-               android:layout_width="0dp"
-               android:layout_height="wrap_content"
-               android:layout_margin="@dimen/margin"
-               android:layout_weight="1"
-               android:background="@drawable/bouton1"
-               android:text="Jouer en ligne" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
 
-           <Button
-               android:id="@+id/jeu_local"
-               android:layout_width="0dp"
-               android:layout_height="wrap_content"
-               android:layout_margin="@dimen/margin"
-               android:layout_weight="1"
-               android:background="@drawable/bouton1"
-               android:text="Jouer en local" />
+        <ExpandableListView
+            android:id="@+id/liste_themes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ExpandableListView>
 
-       </LinearLayout>
+        <ExpandableListView
+            android:id="@+id/liste_questionnaires"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/jeu_en_ligne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/bouton1"
+            android:text="Jouer en ligne" />
+
+        <Button
+            android:id="@+id/jeu_local"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/bouton1"
+            android:text="Jouer en local" />
+    </LinearLayout>
 
 </LinearLayout>
