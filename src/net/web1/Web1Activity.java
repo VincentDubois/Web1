@@ -16,6 +16,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -42,7 +43,8 @@ public class Web1Activity extends Activity {
 		 rec = new AlarmReceiver();
 		 
 		 Intent intent = new Intent(this, AlarmReceiver.class);
-		 intent.putExtra("alarm_message", "perdu!");
+		 intent.putExtra("alarm_message", "perdu!"); 
+					
 		 // In reality, you would want to have a static variable for the request code instead of 192837
 		 PendingIntent sender = PendingIntent.getBroadcast(this, 192837, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 		 
@@ -69,6 +71,17 @@ public class Web1Activity extends Activity {
     		return false;
     	}
 	}*/
+	
+	  public boolean onkeydown(int keyCode, KeyEvent event) 
+      {
+                         
+              if (keyCode == KeyEvent.KEYCODE_BACK) {
+            	  Intent t = new Intent(Web1Activity.this, MenuActivity.class);
+  				startActivity(t);
+              }
+			return true;
+                 
+       }
 
 
 	private void lecture_xml() {
@@ -108,7 +121,7 @@ public class Web1Activity extends Activity {
 						Question question = new Question(titre, reponse);
 						setQuestion.add(question);
 						u=0;
-						reponse = new String[4]; // ne pas oublier de créer un noveau tableau, sinon on modifie l'ancien !
+						reponse = new String[4]; // ne pas oublier de crï¿½er un noveau tableau, sinon on modifie l'ancien !
 					}
 					else if (xpp.getName().equals("questionnaire")) {
 						questionnaire = new Questionnaire(theme, id, setQuestion);
