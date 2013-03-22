@@ -12,7 +12,6 @@ import org.xmlpull.v1.XmlPullParserException;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
@@ -38,7 +37,7 @@ public class Web1Activity extends Activity {
 		listeContact = intent2.getParcelableArrayListExtra("listeContact");
 		ArrayList<Contact> liste = new ArrayList<Contact>();
 		for(Parcelable bundle : listeContact ){
-			liste.add(bundle.bundle());
+			liste.add(new Contact((Bundle) bundle));
 		}
 		lecture_xml();
 		

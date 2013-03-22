@@ -15,9 +15,9 @@ public class Contact {
 	}
 	
 	public Contact(Bundle bundle){
-		bundle.getString("id");
-		bundle.getString("nom");
-		bundle.getParcelable("image");
+		this.id = bundle.getString("id");
+		this.nom = bundle.getString("nom");
+		this.image = bundle.getParcelable("image");
 		
 	}
 	
